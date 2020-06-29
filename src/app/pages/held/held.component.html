@@ -1,0 +1,25 @@
+<!-- <p>held works!</p> -->
+<h2>{{hnd.nombre}} <small>{{hnd.aparicion}}</small></h2>
+
+<div class="row align-items-center">
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="hnd.img" alt="Card image cap">
+            <div class="card-body">
+                <button class="btn btn-outline-primary btn-block" [routerLink]="[ '/helden']"> Zurück</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm">
+        <h4>{{hnd.nombre}}</h4>
+        <hr>
+        <p>{{hnd.bio}} </p>
+        <div>
+            <img class="" width="440" height="100" *ngIf="hnd.casa=='Marvel'" src="https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/22631.jpg">
+            <img class="" width="80" height="80" *ngIf="hnd.casa=='DC' " src="https://i.pinimg.com/564x/55/78/3b/55783bd3e3d8a5eff00410af52b7579e.jpg">
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<!-- <p>helden works!</p> -->
+
+
+<div class="card-columns">
+    <div class="card" *ngFor="let elemento of hdn; let i= index">
+        <img class="card-img-top" [src]="elemento.img" [alt]="elemento.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{elemento.nombre}} {{i}}</h5>
+            <p class="card-text">{{elemento.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{elemento.aparicion}}</small></p>
+            <button class="btn btn-outline-primary btn-block" [routerLink]="[ '/held',i]"> Mehr</button>
+        </div>
+    </div>
+
+</div>
